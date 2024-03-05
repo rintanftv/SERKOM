@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="Tooplate">
 
-        <title>DATA PESERTA SERTIFIKASI</title>
+        <title>Mini Finance Dashboard Template</title>
 
         <!-- CSS FILES -->      
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,7 +87,6 @@ Bootstrap 5 Dashboard Admin Template
                         echo "<b>Hasil pencarian : ".$cari."</b>";
                         //Perintah menampilkan data dari tabel peserta yang sesuai dengan inputan pada variable $cari
                         $sql = mysqli_query($conn, "SELECT * FROM peserta WHERE Nm_peserta LIKE '%" . $cari . "%'");
-                        $sql = mysqli_query($conn, "SELECT * FROM peserta WHERE jekel LIKE '%" . $cari . "%'");
                     } else {
                         // Perintah menampilkan semua data dari tabel peserta
                         $sql = mysqli_query($conn, "SELECT * FROM peserta");
